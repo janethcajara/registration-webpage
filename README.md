@@ -1,4 +1,4 @@
-# Registration Web Page
+# Registration Webpage
 
 Cajara, Janeth M.
 BSIS 3A
