@@ -5,7 +5,7 @@ body {
   color: #222;
   margin: 0;
   padding: 20px;
-  transition: background-color 0.5s ease, color 0.5s ease;
+
 }
 
 .container {
@@ -19,11 +19,11 @@ h1 {
 }
 
 #themeBtn {
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -73,9 +73,9 @@ h1 {
 }
 
 #inner {
-  color: black;
+  color: white;
   background-color: #007bff;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* Dark Mode */
@@ -85,9 +85,9 @@ body.dark-mode {
 }
 
 body.dark-mode #inner{
-  color: rgb(230, 226, 226);
-  background-color:rgb(46, 43, 43);;
-  border-radius: 5px;
+  color: white;
+  background-color:#007bff;
+  border-radius: 10px;
 }
 
 body.dark-mode #outer{
@@ -108,6 +108,6 @@ body.dark-mode input {
 
 body.dark-mode #themeBtn,
 body.dark-mode .registration-form button {
-  background-color: #444;
+  background-color: #007bff;
   color: #f0f0f0;
 }
