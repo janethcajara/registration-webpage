@@ -41,11 +41,17 @@ document.getElementById("resetBtn").addEventListener("click", () => {
   document.getElementById("message").textContent = "";
 });
 
-// Event bubbling and capturing
-document.getElementById("outerDiv").addEventListener("click", () => {
-  console.log("Div Clicked");
-}, true); // capturing
+//Event handling
+const messageEl = document.getElementById("message");
+const outerEl = document.getElementById("outer");
+const innerBtn = document.getElementById("inner");
 
-document.getElementById("bubbleBtn").addEventListener("click", () => {
-  console.log("Button Clicked");
+// Event listener to the outer div with the capturing phase
+outerEl.addEventListener("click", () => {
+  messageEl.textContent = "Div Clicked";
+}, true); // true for capturing
+
+// Event listener sa inner button with default bubbling phase
+innerBtn.addEventListener("click", () => {
+  messageEl.textContent = "Button Clicked";
 });

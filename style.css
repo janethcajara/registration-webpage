@@ -1,6 +1,7 @@
+/* light-mode */
 body {
   font-family: Arial, sans-serif;
-  background-color: #dcebf3;
+  background-color: rgb(189, 220, 241);
   color: #222;
   margin: 0;
   padding: 20px;
@@ -65,25 +66,34 @@ h1 {
   font-weight: bold;
 }
 
-.outer {
-  margin-top: 30px;
-  padding: 20px;
+#outer {
   color: black;
-  background-color:rgb(46, 43, 43);;
+  background-color:white;
   border-radius: 10px;
 }
 
-.inner {
-  padding: 20px;
+#inner {
   color: black;
-  background-color: #363535;
-  border-radius: 10px;
+  background-color: #007bff;
+  border-radius: 5px;
 }
 
 /* Dark Mode */
 body.dark-mode {
   background-color: #1e1e1e;
   color: #f0f0f0;
+}
+
+body.dark-mode #inner{
+  color: rgb(230, 226, 226);
+  background-color:rgb(46, 43, 43);;
+  border-radius: 5px;
+}
+
+body.dark-mode #outer{
+  color: rgb(235, 231, 231);
+  background-color:rgb(46, 43, 43);;
+  border-radius: 10px;
 }
 
 body.dark-mode .registration-form {
